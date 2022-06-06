@@ -8,7 +8,7 @@ Official source codes for our TIP 2022 paper "[Contrastive Self-Supervised Pre-T
 ## CSPT-pretrained weights
 We only provide pre-trained model with resnet-50 backbone here. You can use this model to finetune on your own data.
 
-Download link: [resnet50](https://pan.baidu.com/s/19LDkykn2rE4xivtoNwvyiA)
+Download link: [CSPT-resnet50](https://pan.baidu.com/s/19LDkykn2rE4xivtoNwvyiA)
 
 Password: 6xwg
 
