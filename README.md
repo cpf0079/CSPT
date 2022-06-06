@@ -8,7 +8,7 @@ Official source codes for our TIP 2022 paper "[Contrastive Self-Supervised Pre-T
 
 **Step 2.** Uncertainty-based ranking to split target domain into subdomains by running:
 ```
-$ python ./Sources/ranking.py
+$ python ./source/main.py
 ```
 
 ## CSPT-pretrained weights
