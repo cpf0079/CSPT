@@ -3,10 +3,15 @@ Official source codes for our TIP 2022 paper "[Contrastive Self-Supervised Pre-T
 
 ![image](https://github.com/cpf0079/CSPT/blob/main/framework.png)
 
+## Self-supervised training
+
+## CSPT-pretrained weights
+
 ## Environment
 * Python 3.9.7
 * Pytorch 1.11.0 Torchvision 0.12.0
 * Cuda 11.3 Cudnn 8.2.1 
+* cv2
 
 ## Citation
 If you find this work useful for your research, please cite our paper:
