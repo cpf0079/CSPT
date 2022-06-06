@@ -4,6 +4,12 @@ Official source codes for our TIP 2022 paper "[Contrastive Self-Supervised Pre-T
 ![image](https://github.com/cpf0079/CSPT/blob/main/framework.png)
 
 ## Self-supervised training
+**Step 1.** Prepare the training/validation data and txt files.
+
+**Step 2.** Uncertainty-based ranking to split target domain into subdomains by running:
+```
+$ python ./Sources/ranking.py
+```
 
 ## CSPT-pretrained weights
 We only provide pre-trained model with resnet-50 backbone here. You can use this model to finetune on your own data.
