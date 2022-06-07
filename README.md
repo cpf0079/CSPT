@@ -6,7 +6,7 @@ Official source codes for our TIP 2022 paper "[Contrastive Self-Supervised Pre-T
 ## Self-supervised training
 **Step 1.** Prepare the training/validation data and txt files.
 
-* each line in .txt files should be like "vid_X1_X2.mp4" (X1 denotes the distortion type, X2 denotes the frame number)
+* each item in .txt files should be like "vid_X1_X2.png" (vid denotes the video name, X1 denotes the distortion type, X2 denotes the frame number)
 
 **Step 2.** Uncertainty-based ranking to split target domain into subdomains by running:
 ```
