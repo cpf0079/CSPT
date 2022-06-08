@@ -66,7 +66,7 @@ class Model(nn.Module):
         # block = block.view(B * N, C, SL, H, W)
         block = block.permute(0, 1, 3, 2, 4, 5).contiguous().view(B * N * SL, C, H, W)
         feature = self.backbone(block) # [B*N*SL,2048,1,1]
-        feature = nn.functional.normalize(feature, dim=1)
+        feature = F.normalize(feature, dim=1)
         del block
 
         feature_inf_all = feature.view(B, N, SL, self.param['feature_size'])  # [B,N,SL,2048], before ReLU, (-inf, +inf)
