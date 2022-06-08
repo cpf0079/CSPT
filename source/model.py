@@ -79,6 +79,7 @@ class Model(nn.Module):
         _, hidden = self.agg(feature[:, 0:SL-self.pred_step, :], self._get_initial_state(feature.size(0), feature.device))
         hidden = hidden[:, -1, :]  # [B*N,2048]
         pred = self.network_pred(hidden)  # [B*N,2048]
+        
         del hidden
 
         ### Get similarity score ###
@@ -107,6 +108,3 @@ class Model(nn.Module):
             self.mask = mask
 
         return [score, self.mask]
-
-
-
